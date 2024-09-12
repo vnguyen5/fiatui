@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { DoubleChart, FiatChart } from "./components/FiatCharts";
+import "./App.css";
+import Grid from "@mui/material/Grid";
+import { betaData, logData } from "./data/data";
+import FiatTable from "./components/FiatTable";
+import FiatApp from "./FiatApp"
+// import FiatApp from "./App  "
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <FiatApp />;
 }
 
 export default App;
